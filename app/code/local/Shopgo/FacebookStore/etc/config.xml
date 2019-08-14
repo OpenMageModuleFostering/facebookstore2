@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @category    ShopGo
+ * @package     ShopGo_FacebookStore
+ * @author      ali@shopgo.me
+ */
+-->
+<config>
+    <modules>
+        <Shopgo_FacebookStore>
+            <version>2.0.2</version>
+        </Shopgo_FacebookStore>
+    </modules>
+    <global>
+       <models>
+          <facebookstore>
+              <class>Shopgo_FacebookStore_Model</class>
+          </facebookstore>
+          <catalog>
+              <rewrite>
+                  <product_api>Shopgo_FacebookStore_Model_Product_Api</product_api>
+                  <category_api>Shopgo_FacebookStore_Model_Category_Api</category_api>
+              </rewrite>
+          </catalog>
+       </models>
+       <blocks>
+            <facebookstore>
+                <class>Shopgo_FacebookStore_Block</class>
+            </facebookstore>
+        </blocks>
+        <helpers>
+            <facebookstore>
+                <class>Shopgo_FacebookStore_Helper</class>
+            </facebookstore>
+        </helpers>
+        <resources>
+            <facebookstore_setup>
+                <setup>
+                    <module>Shopgo_FacebookStore</module>
+                </setup>
+            </facebookstore_setup>
+        </resources>
+    </global>
+      <frontend>
+    <routers>
+      <facebookstore>
+        <use>standard</use>
+        <args>
+          <module>Shopgo_FacebookStore</module>
+          <frontName>facebookstore</frontName>
+        </args>
+      </facebookstore>
+    </routers>
+    <layout>
+      <updates>
+        <facebookstore>
+          <file>shopgo/facebookstore.xml</file>
+        </facebookstore>
+      </updates>
+    </layout>
+  </frontend>
+  <default>
+      <facebookstore>
+          <general>
+          </general>
+      </facebookstore>
+  </default>
+</config>

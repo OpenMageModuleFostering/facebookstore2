@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @category    Shopgo
+ * @package     Shopgo_FacebookStore
+ * @author      ali@shopgo.me
+ */
+-->
+<config>
+    <modules>
+        <Shopgo_FacebookStore>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core />
+                <Mage_Catalog />
+            </depends>
+        </Shopgo_FacebookStore>
+    </modules>
+</config>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+  <menu>
+    <shopgo translate="title" module="facebookstore">
+      <title>Shopgo</title>
+      <sort_order>100</sort_order>
+      <children>
+        <facebookstore translate="title" module="facebookstore">
+          <title>Facebookstore2</title>
+          <sort_order>0</sort_order>
+          <children>
+            <configuration>
+              <title>About</title>
+              <sort_order>1</sort_order>
+              <action>adminhtml/system_config/edit/section/facebookstore</action>
+            </configuration>
+          </children>
+        </facebookstore>
+      </children>
+    </shopgo>
+  </menu>
+  <acl>
+    <resources>
+      <all>
+        <title>Allow Everything</title>
+      </all>
+      <admin>
+        <children>
+          <system>
+            <children>
+              <config>
+                <children>
+                  <facebookstore translate="title">
+                    <title>Facebookstore2 Module</title>
+                    <sort_order>10</sort_order>
+                  </facebookstore>
+                </children>
+              </config>
+            </children>
+          </system>
+          <shopgo translate="title" module="facebookstore">
+            <title>Shopgo</title>
+            <sort_order>71</sort_order>
+            <children>
+              <facebookstore translate="title">
+                <title>Facebookstore2 Module</title>
+                <children>
+                  <configuration translate="title">
+                    <title>Configuration</title>
+                    <sort_order>1</sort_order>
+                  </configuration>
+                </children>
+              </facebookstore>
+            </children>
+          </shopgo>
+        </children>
+      </admin>
+    </resources>
+  </acl>
+</config>

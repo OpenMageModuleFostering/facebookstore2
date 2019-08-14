@@ -1,0 +1,41 @@
+<config>
+  <tabs>
+    <shopgo translate="label">
+      <label>Shopgo Extensions</label>
+      <sort_order>205</sort_order>
+    </shopgo>
+  </tabs>
+  <sections>
+    <facebookstore translate="label" module="facebookstore">
+      <class>separator-top</class>
+      <label>Shopgo Facebookstore2</label>
+      <tab>shopgo</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>300</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <general translate="label">
+          <label>General information</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <version translate="label">
+              <label>Facebook store version</label>
+              <frontend_type>select</frontend_type>
+              <frontend_model>Shopgo_FacebookStore_Block_Adminhtml_Version</frontend_model>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </version>
+          </fields>
+        </general>
+      </groups>
+    </facebookstore>
+  </sections>
+</config>
