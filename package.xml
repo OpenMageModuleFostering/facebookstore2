@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Facebookstore2</name>
-    <version>2.0.2</version>
+    <version>2.0.3</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/MIT">MIT</license>
     <channel>community</channel>
     <extends/>
     <summary>ShopGo FacebookStore2</summary>
     <description>ShopGo Facebook store Magento module to sync catalog data with the application.</description>
-    <notes>FacebookStore version 2.0.2</notes>
+    <notes>FacebookStore version 2.0.3</notes>
     <authors><author><name>Ali Halabyah</name><user>alihalabyah</user><email>ali@shopgo.me</email></author><author><name>ShopGo</name><user>shopgo</user><email>support@shopgo.me</email></author></authors>
-    <date>2015-01-16</date>
-    <time>19:36:32</time>
-    <contents><target name="magelocal"><dir name="Shopgo"><dir name="FacebookStore"><dir name="Block"><dir name="Adminhtml"><file name="Version.php" hash="5d45a46004b7b89a51daa405b06e1f6d"/></dir></dir><dir name="Helper"><file name="Data.php" hash="7af4fe501d57fe60c1ada3fa56b50ff6"/></dir><dir name="Model"><dir name="Category"><file name="Api.php" hash="b8ce09cad9cded03dc01a996c6448c7c"/></dir><dir name="Product"><file name="Api.php" hash="0e6c3dfba4ae300fa1b20c7d231bc615"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="fb3ab939afb40fda6cc825a6409f4eb4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="91ef226efdbaa62a01b7f7f89c88ff85"/><file name="config.xml" hash="a35adb0aa15afd7b7db45c44a4071bd0"/><file name="system.xml" hash="4df51c5bcbcc090955680b2ab9204e47"/></dir><dir name="sql"><dir name="facebookstore_setup"><file name="mysql4-install-2.0.1.php" hash="e0286f6318cdc76b1383e465166bd43e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shopgo_FacebookStore.xml" hash="748a6208e76ed323e9fa8981cdcac38d"/></dir></target></contents>
+    <date>2015-02-04</date>
+    <time>11:35:18</time>
+    <contents><target name="magelocal"><dir name="Shopgo"><dir name="FacebookStore"><dir name="Block"><dir name="Adminhtml"><file name="Version.php" hash="5d45a46004b7b89a51daa405b06e1f6d"/></dir></dir><dir name="Helper"><file name="Data.php" hash="7af4fe501d57fe60c1ada3fa56b50ff6"/></dir><dir name="Model"><dir name="Category"><file name="Api.php" hash="b8ce09cad9cded03dc01a996c6448c7c"/></dir><dir name="Product"><file name="Api.php" hash="0c280eaaa5923579703869fcdacc3b1f"/></dir><dir name="Store"><file name="Api.php" hash="0a40191fb668bbd40a2bd819bf52c2b9"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="fb3ab939afb40fda6cc825a6409f4eb4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="91ef226efdbaa62a01b7f7f89c88ff85"/><file name="config.xml" hash="1df182f606bec23a74ae840ab46d0d88"/><file name="system.xml" hash="4df51c5bcbcc090955680b2ab9204e47"/></dir><dir name="sql"><dir name="facebookstore_setup"><file name="mysql4-install-2.0.1.php" hash="e0286f6318cdc76b1383e465166bd43e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Shopgo_FacebookStore.xml" hash="748a6208e76ed323e9fa8981cdcac38d"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

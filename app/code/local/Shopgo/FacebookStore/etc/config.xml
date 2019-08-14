@@ -9,20 +9,25 @@
 <config>
     <modules>
         <Shopgo_FacebookStore>
-            <version>2.0.2</version>
+            <version>2.0.3</version>
         </Shopgo_FacebookStore>
     </modules>
     <global>
        <models>
-          <facebookstore>
-              <class>Shopgo_FacebookStore_Model</class>
-          </facebookstore>
-          <catalog>
-              <rewrite>
-                  <product_api>Shopgo_FacebookStore_Model_Product_Api</product_api>
-                  <category_api>Shopgo_FacebookStore_Model_Category_Api</category_api>
-              </rewrite>
-          </catalog>
+            <facebookstore>
+                <class>Shopgo_FacebookStore_Model</class>
+            </facebookstore>
+            <catalog>
+                <rewrite>
+                    <product_api>Shopgo_FacebookStore_Model_Product_Api</product_api>
+                    <category_api>Shopgo_FacebookStore_Model_Category_Api</category_api>
+                </rewrite>
+            </catalog>
+            <core>
+                <rewrite>
+                    <store_api>Shopgo_FacebookStore_Model_Store_Api</store_api>
+                </rewrite>
+            </core>
        </models>
        <blocks>
             <facebookstore>
@@ -42,28 +47,28 @@
             </facebookstore_setup>
         </resources>
     </global>
-      <frontend>
-    <routers>
-      <facebookstore>
-        <use>standard</use>
-        <args>
-          <module>Shopgo_FacebookStore</module>
-          <frontName>facebookstore</frontName>
-        </args>
-      </facebookstore>
-    </routers>
-    <layout>
-      <updates>
+    <frontend>
+        <routers>
+            <facebookstore>
+                <use>standard</use>
+                <args>
+                    <module>Shopgo_FacebookStore</module>
+                    <frontName>facebookstore</frontName>
+                </args>
+            </facebookstore>
+        </routers>
+        <layout>
+            <updates>
+                <facebookstore>
+                    <file>shopgo/facebookstore.xml</file>
+                </facebookstore>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
         <facebookstore>
-          <file>shopgo/facebookstore.xml</file>
+            <general>
+            </general>
         </facebookstore>
-      </updates>
-    </layout>
-  </frontend>
-  <default>
-      <facebookstore>
-          <general>
-          </general>
-      </facebookstore>
-  </default>
+    </default>
 </config>

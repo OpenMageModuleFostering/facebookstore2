@@ -60,8 +60,10 @@ class Shopgo_FacebookStore_Model_Product_Api extends Mage_Catalog_Model_Product_
                 false
             );
 
-            $final_price = Mage::helper('core')->currency($product->getFinalPrice(),true,false);
-
+            $final_price = Mage::helper('core')->currency($product->getFinalPrice(), true, false);
+            // $qty = Mage::getModel('cataloginventory/stock_item')->loadByProduct($product)->getQty();
+            $inStock = $product->getStockItem()->getIsInStock();
+            
             $result[] = array(
                 'product_id' => $product->getId(),
                 'sku'        => $product->getSku(),
@@ -82,7 +84,8 @@ class Shopgo_FacebookStore_Model_Product_Api extends Mage_Catalog_Model_Product_
                 'type'       => $product->getTypeId(),
                 'category_ids' => $product->getCategoryIds(),
                 'website_ids'  => $product->getWebsiteIds(),
-                'cart_url' => Mage::getUrl('checkout/cart/add', array('product' => $product->getId()))
+                'cart_url' => Mage::getUrl('checkout/cart/add', array('product' => $product->getId())),
+                'in_stock' => $inStock
             );
         }
         return $result;
