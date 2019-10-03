@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Facebookstore2",
+    "name": "OpenMageModuleFostering\/Facebookstore2",
     "type": "magento-module",
     "license": "MIT",
     "homepage": "",
     "description": "ShopGo FacebookStore2",
     "authors": [
-    {
-        "name": "Ali Halabyah",
-        "email": "ali@shopgo.me"
-    }
-],
+        {
+            "name": "Ali Halabyah",
+            "email": "ali@shopgo.me"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
